@@ -17,5 +17,8 @@ int main(int argc, char* argv[])
 			
 			"CC_NAME_IDENTIFIER", "Jorben,\nMore").value()
 	);
+
+	CC_LOG_INFO("\n{0}", Text::ReplaceWithIndentation("\tCC_NAME_IDENTIFIER", "CC_NAME_IDENTIFIER", "Test\nTest2\nTest3").value());
+
 	return 0;
 }

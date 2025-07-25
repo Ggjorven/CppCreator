@@ -29,17 +29,4 @@ namespace Cc::Text
         return count;
     }
 
-    constexpr void ReplaceAll(std::string& str, std::string_view from, std::string_view to) noexcept(true)
-    {
-        if (from.empty()) 
-            return;
-
-        size_t startPos = 0;
-        while ((startPos = str.find(from, startPos)) != std::string::npos)
-        {
-            str.replace(startPos, from.length(), to);
-            startPos += to.length(); // Advance past the replaced portion
-        }
-    }
-
 }
