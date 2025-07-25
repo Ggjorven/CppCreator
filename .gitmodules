@@ -1,0 +1,3 @@
+[submodule "vendor/Nano/Nano"]
+	path = vendor/Nano/Nano
+	url = https://github.com/Ggjorven/Nano.git

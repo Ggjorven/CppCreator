@@ -34,6 +34,8 @@ project "CppCreator"
 		"src",
 
 		"%{wks.location}/CppCreator/src",
+
+		"%{Dependencies.Nano.IncludeDir}"
 	}
 
 	links
